@@ -1,0 +1,34 @@
+Bugs found:
+
+Changes to make:
+-[x] Normalise company name to "Quotli"
+-[ ] improve UX by explaining phenomena,like "logo isnt visible bc of free plan"
+--- Add "check network" error for pdf generation instead of pure error msg
+--- Add num free generations left, and refresh date
+-[ ] Add ITA, FRA, ENG, DE languages  support
+-[x] implement a config or so for demo mode so I can test out paid plan too
+
+Improvements:
+-PDF templates
+-Payment QR (make the whole thing look properly swiss)
+-natural text box next to PDF preview, for live edits
+-natural edits for duplicated Quotes
+-materials/processes registry, to give more accurate pricing (AI learns from manual price changes?)
+-lets change the very generic blue color to Emerald/Sage Green
+
+More UX improvements worth adding:
+-x Empty state for quote history: "Noch keine Offerten. Erstelle deine erste!" with a CTA button
+- Helpful loading messages during AI generation: "Analysiere Projektbeschreibung...", "Berechne Positionen..."
+-x Minimum character hint on textarea: "Mindestens 20 Zeichen für ein brauchbares Ergebnis"
+-x Auto-save draft indicator when editing line items
+- PDF preview button before download (render in-browser)
+- Explain read-only fields: Tooltip on AI-generated fields like "Von AI berechnet — bearbeitbar nach Generierung"
+- Drag-and-drop logo upload instead of just a button
+- Mobile-friendly line item editing (collapsible rows)
+- Keyboard shortcut hints: Ctrl+Enter to generate, Ctrl+S to download PDF
+- Error recovery: "Erneut versuchen" button on all error states, not just error text FOr7
+
+chats:
+process_quotegen_v1
+opencode -s ses_200dcd628ffe23D5nKFxRnjYuC ->current
+separate terminal: ngrok http 3000
